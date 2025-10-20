@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>producer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top-bar">
+  <span class="site-name"><a href="index.html">KINOHUB</a></span>
+  <form class="search-form" action="/search" method="get">
+    <input type="search" name="query" placeholder="Search films...">
+    <button type="submit">&#x1F50D;</button>
+  </form>
+  <div class="nav-buttons">
+    <a href="../favorite/kinohubfav.html"><button>Favorites</button></a>
+    <a href="../Main/index.html"><button>Menu</button></a>
+    <a href="../Settings/a4p1t1.html"><button>Settings</button></a>
+    <a href="../Profile/moviehub.html"><button>Profile</button></a>
+    <button id="changeColorBtn">Change Theme</button>
+    <button id="showTimeBtn" tabindex="0">Show Time</button>
+  </div>
+  <div id="currentTimeDisplay"></div>
+</div>
+<div id="main">
+
+    <div class="profile-container">
+        <div class="profile-left-column">
+            <img src="Producer.jpg" class="profile-pic">
+        </div>
+
+        <div class="profile-right-column">
+            <h1 class="main-title">Yerassyl Gaziz</h1>
+
+            <h2 class="section-title">About Person</h2>
+            <div class="details-grid">
+                <div class="detail-label">Career</div>
+                <div class="detail-value">Producer, Screenwriter, Director, Cinematographer, Actor, Composer</div>
+                <div class="detail-label">Height</div>
+                <div class="detail-value">1.88 m</div>
+                <div class="detail-label">Date of Birth</div>
+                <div class="detail-value">22 may, 2007 ~ 18 years</div>
+                <div class="detail-label">Place of Birth</div>
+                <div class="detail-value">Almaty, Kazakhstan</div>
+                <div class="detail-label">Wife</div>
+                <div class="detail-value">Aya Shalkar</div>
+            </div>
+
+            <div class="films-section">
+                <h2 class="section-title">Best Movies</h2>
+                <ul class="film-list">
+                    <li>SuperErma</li>
+                    <li>YesMan</li>
+                    <li>The Mask</li>
+                    <li>Jumanji</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="films">
+            <a href="../Actor/superErma.html"><img src="poster1.jpg"></a>
+            <img src="poster2.jpeg">
+            <img src="poster3.jpg">
+            <img src="poster4.jpg">
+            <img src="poster5.jpg">
+            <img src="poster6.jpg">
+        </div>
+    </div>
+
+
+
+</div>
+
+<div class="top-icons">
+  <div class="faq-button" id="faqButton">?</div>
+  <div class="contact-button" id="contactButton">&#128712</div>
+</div>
+
+<div class="faq-popup" id="faqPopup">
+  <div class="faq-content">
+    <span class="close-faq" id="closeFaq">&times;</span>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">What is KinoHub?</button>
+      <div class="faq-answer">
+        <p>KinoHub is a platform where you can discover new movies, read reviews, and stay updated on the latest releases.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do I need an account to use KinoHub?</button>
+      <div class="faq-answer">
+        <p>No, you can browse content without an account. However, creating one allows you to save favorites and write reviews.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How often are movies updated?</button>
+      <div class="faq-answer">
+        <p>Our database is updated weekly to keep you informed about the latest films and upcoming releases.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="contactPopup" class="popup">
+  <div class="popup-content">
+    <span class="close" id="closeContact">&times;</span>
+    <h2 style="color: #111111">Contact Us</h2>
+    <form id="contactForm">
+      <label for="contactName">Name:</label>
+      <input type="text" id="contactName" placeholder="Enter your name" required>
+
+      <label for="contactEmail">Email:</label>
+      <input type="email" id="contactEmail" placeholder="Enter your email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+
+      <button type="submit" class="submit-btn">Send</button>
+    </form>
+    <div id="feedbackMessage"></div>
+  </div>
+</div>
+
+<script src="../java/FAQ.js"></script>
+<script src="../java/contact.js"></script>
+<script src="../java/partOfAsik6.js"></script>
+<script src="../java/theme.js"></script>
+
+
+</body>
+<hr>
+<footer>
+    <center><font size="3" style="color: white">2025 Baktiyar, Yermakhan, Yerassyl. All rights reserved.</font></center>
+</footer>
+</html>

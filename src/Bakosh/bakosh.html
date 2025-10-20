@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinohub - about actor</title>
+    <link rel="stylesheet" href="bakosh.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="top-bar">
+  <span class="site-name"><a href="index.html">KINOHUB</a></span>
+  <form class="search-form" action="/search" method="get">
+    <input type="search" name="query" placeholder="Search films...">
+    <button type="submit">&#x1F50D;</button>
+  </form>
+  <div class="nav-buttons">
+    <a href="../favorite/kinohubfav.html"><button>Favorites</button></a>
+    <a href="../Main/index.html"><button>Menu</button></a>
+    <a href="../Settings/a4p1t1.html"><button>Settings</button></a>
+    <a href="../Profile/moviehub.html"><button>Profile</button></a>
+    <button id="changeColorBtn">Change Theme</button>
+    <button id="showTimeBtn" tabindex="0">Show Time</button>
+  </div>
+  <div id="currentTimeDisplay"></div>
+</div>
+<div class="content">
+    <div class="container">
+        <img src = "bakosh.jpg" width = "300px" height="400px">
+        <div class="text">
+            <h1>Kuanysh Baktiyar Ardakuly</h1>
+            <p>
+                Career: actor<br>
+                <br>
+                Birthday: 14 May 2007<br>
+                <br>
+                Born place: Aktobe, Kazakhstan<br>
+                <br>
+                Height: 178cm<br>
+                <br>
+                Wife: Tamiris Zhangazinova
+            </p>
+            <hr>
+        </div>
+    </div>
+    <p>
+        Kuanysh Baktiyar Ardakuly was born on May 14, 2007, in the city of Aktobe, Republic of Kazakhstan. As the first son in his family, he showed an early interest in the arts, particularly cinema, which led him to pursue a career in acting.
+    </p>
+    <p>
+        Today, Kuanysh Baktiyar Ardakuly continues to build his career, constantly seeking new challenges and proving he is not a one-role actor.
+    </p>
+
+    <h3>
+        Movies with this actor:
+    </h3>
+
+    <div class="films">
+        <img src = "732071450_photo_1758172750378.jpg">
+        <img src = "hacksawridgepic.jpg">
+        <img src = "project_x-p630878.jpg">
+        <img src = "o_01_20.jpg">
+        <img src = "цщдлыцфддыекууе.jpg">
+        <img src = "супернянь.jpg">
+    </div>
+    <div class="achievements">
+        <h3>Actor's Achievements</h3>
+
+        <div class="achievements-grid">
+
+            <div class="achievement-award">
+                <p>Academy Award for Best Actor</p>
+            </div>
+            <div class="achievement-details">
+                <p>2023 for "Hacksaw Ridge"</p>
+            </div>
+
+            <div class="achievement-award">
+                <p>Golden Globe for Best Comedy Actor</p>
+            </div>
+            <div class="achievement-details">
+                <p>2022 for "Hangover"</p>
+            </div>
+
+            <div class="achievement-award">
+                <p>BAFTA Award for Rising Star</p>
+            </div>
+            <div class="achievement-details">
+                <p>2021 for "Project X"</p>
+            </div>
+
+        </div>
+    </div>
+    <h3>Social Networks of Actor:</h3>
+    <a href="https://www.instagram.com/thebakosh" target="_blank" style="color:rgb(255, 119, 0)">
+        Instagram
+    </a>
+</div>
+<hr>
+<footer>
+    <center><font size="3">2025 Baktiyar, Yermakhan, Yerassyl. All rights reserved.</font></center>
+</footer>
+
+<div class="top-icons">
+  <div class="faq-button" id="faqButton">?</div>
+  <div class="contact-button" id="contactButton">&#128712</div>
+</div>
+
+<div class="faq-popup" id="faqPopup">
+  <div class="faq-content">
+    <span class="close-faq" id="closeFaq">&times;</span>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">What is KinoHub?</button>
+      <div class="faq-answer">
+        <p>KinoHub is a platform where you can discover new movies, read reviews, and stay updated on the latest releases.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do I need an account to use KinoHub?</button>
+      <div class="faq-answer">
+        <p>No, you can browse content without an account. However, creating one allows you to save favorites and write reviews.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How often are movies updated?</button>
+      <div class="faq-answer">
+        <p>Our database is updated weekly to keep you informed about the latest films and upcoming releases.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="contactPopup" class="popup">
+  <div class="popup-content">
+    <span class="close" id="closeContact">&times;</span>
+    <h2 style="color: #111111">Contact Us</h2>
+    <form id="contactForm">
+      <label for="contactName">Name:</label>
+      <input type="text" id="contactName" placeholder="Enter your name" required>
+
+      <label for="contactEmail">Email:</label>
+      <input type="email" id="contactEmail" placeholder="Enter your email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+
+      <button type="submit" class="submit-btn">Send</button>
+    </form>
+    <div id="feedbackMessage"></div>
+  </div>
+</div>
+
+<script src="../java/FAQ.js"></script>
+<script src="../java/contact.js"></script>
+<script src="../java/partOfAsik6.js"></script>
+
+
+</body>
+</html>

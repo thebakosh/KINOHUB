@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kinohub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top-bar">
+  <span class="site-name"><a href="index.html">KINOHUB</a></span>
+  <form class="search-form" action="/search" method="get">
+    <input type="search" name="query" placeholder="Search films...">
+    <button type="submit">&#x1F50D;</button>
+  </form>
+  <div class="nav-buttons">
+    <a href="../favorite/kinohubfav.html"><button>Favorites</button></a>
+    <a href="../Main/index.html"><button>Menu</button></a>
+    <a href="../Settings/a4p1t1.html"><button>Settings</button></a>
+    <a href="../Profile/moviehub.html"><button>Profile</button></a>
+    <button id="changeColorBtn">Change Theme</button>
+    <button id="showTimeBtn" tabindex="0">Show Time</button>
+  </div>
+  <div id="currentTimeDisplay"></div>
+</div>
+<div id="main">
+  <div class="pfp">
+    <img src="pfp.png" alt="Profile Picture" width="160" height="160">
+  </div>
+
+  <div class="username">
+    <h3 id="displayName">username</h3>
+    <p id="bioText">your bio</p>
+    <button id="updateProfile">Update Profile</button>
+  </div>
+
+
+<nav class="profile-nav">
+    <ul>
+        <li>Profile</li>
+        <li>Activity</li>
+        <li>Reviews</li>
+        <li>Watchlist</li>
+        <li>Likes</li>
+    </ul>
+</nav>
+</div>
+
+<div class="top-icons">
+  <div class="faq-button" id="faqButton">?</div>
+  <div class="contact-button" id="contactButton">&#128712</div>
+</div>
+
+<div class="faq-popup" id="faqPopup">
+  <div class="faq-content">
+    <span class="close-faq" id="closeFaq">&times;</span>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">What is KinoHub?</button>
+      <div class="faq-answer">
+        <p>KinoHub is a platform where you can discover new movies, read reviews, and stay updated on the latest releases.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do I need an account to use KinoHub?</button>
+      <div class="faq-answer">
+        <p>No, you can browse content without an account. However, creating one allows you to save favorites and write reviews.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How often are movies updated?</button>
+      <div class="faq-answer">
+        <p>Our database is updated weekly to keep you informed about the latest films and upcoming releases.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contactPopup" class="popup">
+  <div class="popup-content">
+    <span class="close" id="closeContact">&times;</span>
+    <h2 style="color: #111111">Contact Us</h2>
+    <form id="contactForm">
+      <label for="contactName">Name:</label>
+      <input type="text" id="contactName" placeholder="Enter your name" required>
+
+      <label for="contactEmail">Email:</label>
+      <input type="email" id="contactEmail" placeholder="Enter your email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+
+      <button type="submit" class="submit-btn">Send</button>
+    </form>
+    <div id="feedbackMessage"></div>
+  </div>
+</div>
+
+<div id="luckyPopup" class="lucky-popup">
+  <div class="lucky-content">
+    <span class="close-lucky">&times;</span>
+    <h2>Твоё удачное число:</h2>
+    <p id="luckyNumberDisplay"></p>
+  </div>
+</div>
+<script src="../java/FAQ.js"></script>
+<script src="../java/contact.js"></script>
+<script src="../java/profileUpdate.js"></script>
+<script src="../java/partOfAsik6.js"></script>
+
+</body>
+<hr>
+<footer>
+  <center><font size="3" style="color: white">2025 Baktiyar, Yermakhan, Yerassyl. All rights reserved.</font>
+  <button id="luckyBtn">do you wanna know your lucky number?</button></center>
+  <div id="luckyNumber" class="lucky-number"></div>
+  <script src="../java/lucky.js"></script>
+</footer>
+</html>

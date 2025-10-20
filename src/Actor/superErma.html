@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styleOfSuperErma.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="top-bar">
+  <span class="site-name"><a href="index.html">KINOHUB</a></span>
+  <form class="search-form" action="/search" method="get">
+    <input type="search" name="query" placeholder="Search films...">
+    <button type="submit">&#x1F50D;</button>
+  </form>
+  <div class="nav-buttons">
+    <a href="../favorite/kinohubfav.html"><button>Favorites</button></a>
+    <a href="../Main/index.html"><button>Menu</button></a>
+    <a href="../Settings/a4p1t1.html"><button>Settings</button></a>
+    <a href="../Profile/moviehub.html"><button>Profile</button></a>
+    <button id="changeColorBtn">Change Theme</button>
+    <button id="showTimeBtn" tabindex="0">Show Time</button>
+  </div>
+  <div id="currentTimeDisplay"></div>
+</div>
+<div class="movie-card">
+    <div class="poster-container">
+        <img src="poster1.jpg" alt="Superman Poster" class="poster">
+    </div>
+
+    <div class="movie-info">
+        <h1>SuperErma <span class="year">2025</span></h1>
+        <h3>Directed by <a href="../Producer/producer.html">Gaziz Yerassyl</a></h3>
+        <p>SuperErma, a journalist in Metropolis, embarks on a journey to reconcile
+            his Kryptonian heritage with his human upbringing as Khamitov Yermakhan.
+        </p>
+        <div class="movie-details">
+        <p><strong>Genre:</strong> Action, Adventure, Sci-Fi</p>
+        <p><strong>Rating:</strong> 9.7 / 10</p>
+            <p><strong>Cast:</strong> <a href="../Erma/kinohub.html">Khamitov Yermakhan</a>, <a href="../Bakosh/bakosh.html">Kuanysh Baktiyar</a>, <a href="../Producer/producer.html">Gaziz Yerassyl</a></p>
+    </div>
+    </div>
+  <div class="action-panel">
+    <button><i class="fa fa-eye"></i> Watch</button>
+    <button><i class="fa fa-heart"></i> Like</button>
+    <button><i class="fa fa-plus-circle"></i> Watchlist</button>
+    <span>Rate:</span>
+
+    <div class="rating">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+    </div>
+
+    <button>Review / Log...</button>
+    <button>Add to lists...</button>
+    <button>Share</button>
+  </div>
+
+
+</div>
+<div class="new-on-kinohub">
+    <h2>NEW ON KINOHUB</h2>
+    <div class="movies-row">
+        <div class="mini-card">
+            <img src="poster4.jpg" alt="Movie 1">
+            <h3>You</h3>
+            <p>8.5 | Detective</p>
+        </div>
+        <div class="mini-card">
+            <img src="poster2.jpeg" alt="Movie 2">
+            <h3>Yes Man</h3>
+            <p>7.9 | Drama</p>
+        </div>
+        <div class="mini-card">
+            <img src="poster3.jpg" alt="Movie 3">
+            <h3>Mask</h3>
+            <p>9.1 | Comedy</p>
+        </div>
+        <div class="mini-card">
+            <img src="poster5.jpg" alt="Movie 3">
+            <h3>Sopranos</h3>
+            <p>9.3 | Action</p>
+        </div>
+        <div class="mini-card">
+            <img src="poster6.jpg" alt="Movie 3">
+            <h3>Jumanji</h3>
+            <p>7.1 | Fantastic</p>
+        </div>
+        <div class="mini-card">
+            <img src="poster7.jpg" alt="Movie 3">
+            <h3>The Pursuit Of Happiness</h3>
+            <p>9.8 | Drama</p>
+        </div>
+        <div class="mini-card">
+            <img src="poster8.jpeg" alt="Movie 3">
+            <h3>The Butterfly Effect</h3>
+            <p>7.3 | Science Fiction</p>
+        </div>
+        <div class="mini-card">
+            <img src="poster9.jpg" alt="Movie 3">
+            <h3>Real Steal</h3>
+            <p>8.7 | Fantastic</p>
+        </div>
+    </div>
+</div>
+
+<hr>
+<footer>
+    <center><font size="3">2025 Baktiyar, Yermakhan, Yerassyl. All rights reserved.</font></center>
+</footer>
+
+<div class="top-icons">
+  <div class="faq-button" id="faqButton">?</div>
+  <div class="contact-button" id="contactButton">&#128712</div>
+</div>
+
+<div class="faq-popup" id="faqPopup">
+  <div class="faq-content">
+    <span class="close-faq" id="closeFaq">&times;</span>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">What is KinoHub?</button>
+      <div class="faq-answer">
+        <p>KinoHub is a platform where you can discover new movies, read reviews, and stay updated on the latest releases.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do I need an account to use KinoHub?</button>
+      <div class="faq-answer">
+        <p>No, you can browse content without an account. However, creating one allows you to save favorites and write reviews.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How often are movies updated?</button>
+      <div class="faq-answer">
+        <p>Our database is updated weekly to keep you informed about the latest films and upcoming releases.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contactPopup" class="popup">
+  <div class="popup-content">
+    <span class="close" id="closeContact">&times;</span>
+    <h2 style="color: #111111">Contact Us</h2>
+    <form id="contactForm">
+      <label for="contactName">Name:</label>
+      <input type="text" id="contactName" placeholder="Enter your name" required>
+
+      <label for="contactEmail">Email:</label>
+      <input type="email" id="contactEmail" placeholder="Enter your email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+
+      <button type="submit" class="submit-btn">Send</button>
+    </form>
+    <div id="feedbackMessage"></div>
+  </div>
+</div>
+
+<script src="../java/FAQ.js"></script>
+<script src="../java/contact.js"></script>
+<script src="../java/rate.js"></script>
+<script src="../java/datetime.js"></script>
+</body>
+</html>
