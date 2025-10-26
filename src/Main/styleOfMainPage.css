@@ -433,3 +433,49 @@ a{
 
 
 
+
+
+.search-results {
+  display: none;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  max-height: 150px;
+  max-width: 220px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 15px;
+  margin-left: 320px;
+}
+
+.search-results .movie-card {
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.search-results .movie-card:hover {
+  background-color: #f0f0f0;
+}
+
+.search-results .title {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.search-results .date {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.highlight {
+  background-color: yellow;
+  color: red;
+  font-weight: bold;
+}
+

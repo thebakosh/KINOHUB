@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
+    <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="styleOfMainPage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,9 +13,10 @@
 <div class="top-bar">
   <span class="site-name"><a href="index.html">KINOHUB</a></span>
   <form class="search-form" action="/search" method="get">
-    <input type="search" name="query" placeholder="Search films...">
+    <input type="search" name="query" placeholder="Search films..." id="searchInput">
     <button type="submit">&#x1F50D;</button>
   </form>
+  <div id="searchResults" class="search-results"></div>
   <div class="nav-buttons">
     <a href="../favorite/kinohubfav.html"><button>Favorites</button></a>
     <a href="index.html"><button>Menu</button></a>
@@ -32,43 +35,44 @@
 </div>
 <section class="movie-section">
     <h2 style="margin-left: 45px"> New on KinoHub</h2>
-    <div class="movie-list">
-        <div class="movie-card">
-            <a href="../Actor/superErma.html"><img src="poster1.jpg" alt="Movie Poster"></a>
-            <p class="title">SuperErma</p>
-            <p class="date">Sep 23</p>
-        </div>
-
-        <div class="movie-card">
-            <img src="poster2.jpeg" alt="Movie Poster">
-            <p class="title">Yes Man</p>
-            <p class="date">Sep 24</p>
-        </div>
-
-        <div class="movie-card">
-            <img src="poster3.jpg" alt="Movie Poster">
-            <p class="title">Mask</p>
-            <p class="date">Sep 25</p>
-        </div>
-
-        <div class="movie-card">
-            <img src="poster4.jpg" alt="Movie Poster">
-            <p class="title">You</p>
-            <p class="date">Sep 28</p>
-        </div>
-
-        <div class="movie-card">
-            <img src="poster5.jpg" alt="Movie Poster">
-            <p class="title">The Sopranos</p>
-            <p class="date">Sep 28</p>
-        </div>
-
-        <div class="movie-card">
-            <img src="poster6.jpg" alt="Movie Poster">
-            <p class="title">Jumanji</p>
-            <p class="date">Sep 29</p>
-        </div>
+  <div class="movie-list">
+    <div class="movie-card" data-title="SuperErma">
+      <a href="../Actor/superErma.html"><img src="poster1.jpg" alt="Movie Poster"></a>
+      <p class="title">SuperErma</p>
+      <p class="date">Sep 23</p>
     </div>
+
+    <div class="movie-card" data-title="Yes Man">
+      <img src="poster2.jpeg" alt="Movie Poster">
+      <p class="title">Yes Man</p>
+      <p class="date">Sep 24</p>
+    </div>
+
+    <div class="movie-card" data-title="Mask">
+      <img src="poster3.jpg" alt="Movie Poster">
+      <p class="title">Mask</p>
+      <p class="date">Sep 25</p>
+    </div>
+
+    <div class="movie-card" data-title="You">
+      <img src="poster4.jpg" alt="Movie Poster">
+      <p class="title">You</p>
+      <p class="date">Sep 28</p>
+    </div>
+
+    <div class="movie-card" data-title="The Sopranos">
+      <img src="poster5.jpg" alt="Movie Poster">
+      <p class="title">The Sopranos</p>
+      <p class="date">Sep 28</p>
+    </div>
+
+    <div class="movie-card" data-title="Jumanji">
+      <img src="poster6.jpg" alt="Movie Poster">
+      <p class="title">Jumanji</p>
+      <p class="date">Sep 29</p>
+    </div>
+  </div>
+
 </section>
 <h2 class="section-title" style="margin-left: 45px" >NEWS OF THE DAY</h2>
 
@@ -81,6 +85,11 @@
     </div>
 </div>
 
+<form class="search-form" id="searchNewsForm" action="javascript:void(0);">
+  <input type="search" id="searchNewsInput" placeholder="Search..." />
+  <button type="submit">&#x1F50D;</button>
+</form>
+
 <hr>
 <footer>
     <center><font size="3">2025 Baktiyar, Yermakhan, Yerassyl. All rights reserved.</font></center>
@@ -89,7 +98,6 @@
 <div class="top-icons">
   <div class="faq-button" id="faqButton">?</div>
   <div class="contact-button" id="contactButton">&#128712</div>
-</div>
 
 <div class="faq-popup" id="faqPopup">
   <div class="faq-content">
@@ -138,9 +146,13 @@
   </div>
 </div>
 
-<script src="../java/FAQ.js"></script>
-<script src="../java/contact.js"></script>
-<script src="../java/partOfAsik6.js"></script>
+
+<script src="../JavaScript/script.js"></script>
+<script src="../JavaScript/FAQ.js"></script>
+<script src="../JavaScript/contact.js"></script>
+<script src="../JavaScript/partOfAsik6.js"></script>
+
+
 
 
 </body>
