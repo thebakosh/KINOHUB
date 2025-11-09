@@ -11,12 +11,14 @@
 </head>
 <body>
 
+
 <div class="top-bar">
   <span class="site-name"><a href="../Main/index.html">KINOHUB</a></span>
-  <form class="search-form" action="/search" method="get">
-    <input type="search" name="query" placeholder="Search films...">
+  <form class="search-form">
+    <input type="search" name="query" placeholder="Search films..." id="searchInput">
     <button type="submit">&#x1F50D;</button>
   </form>
+  <div id="searchResults" class="search-results"></div>
   <div class="nav-buttons">
     <a href="../favorite/kinohubfav.html"><button>Favorites</button></a>
     <a href="../Main/index.html"><button>Menu</button></a>
@@ -115,6 +117,12 @@
       <p>8.7 | Fantastic</p>
     </div>
 
+    <div class="mini-card col-12 col-md-3">
+      <img src="poster10.jpg" alt="Movie 3" class="img-fluid rounded">
+      <h3>Your Name</h3>
+      <p>9.7 | Fantastic</p>
+    </div>
+
   </div>
 </div>
 
@@ -172,12 +180,14 @@
     <div id="feedbackMessage"></div>
   </div>
 </div>
+</div>
+<div id="toast" class="toast">Form submitted successfully!</div>
 
 <script src="../JavaScript/FAQ.js"></script>
 <script src="../JavaScript/contact.js"></script>
 <script src="../JavaScript/rate.js"></script>
 <script src="../JavaScript/datetime.js"></script>
-<script src="../JavaScript/script.js"></script>
+<script src="../JavaScript/search.js"></script>
 <script src="../JavaScript/counter.js"></script>
 <script src="../JavaScript/copy.js"></script>
 

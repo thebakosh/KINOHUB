@@ -7,37 +7,101 @@ body {
     background-attachment: fixed;
 }
 
+
+
 a {
     text-decoration: none;
     color: inherit;
 }
-
 .top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    color: rgb(232, 101, 0);
-    padding: 15px 30px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: rgb(232, 101, 0);
+  padding: 15px 30px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 1000;
 }
 
 .site-name {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: "Colibri", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Colibri", sans-serif;
+}
+.search-form {
+  display: flex;
+  align-items: center;
 }
 
+.search-form input[type="search"] {
+  border: 0.1px #000000;
+  border-radius: 20px;
+  padding: 8px 15px;
+  width: 250px;
+  background: transparent;
+  color: white;
+}
+
+.search-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-left: 5px;
+}
+
+.search-results {
+  display: none;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  max-height: 150px;
+  max-width: 220px;
+  overflow-y: auto;
+  background-color: black;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 15px;
+  margin-left: 315px;
+}
+
+.search-results .movie-card {
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.search-results .movie-card:hover {
+  background-color: #f0f0f0;
+}
+
+.search-results .title {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.search-results .date {
+  font-size: 0.9em;
+  color: #777;
+}
+
+.site-name {
+  font-size: 24px;
+  font-weight: bold;
+}
 .nav-buttons {
-    display: flex;
-    gap: 15px;
-    margin-right: 30px;
-    align-items: center;
+  display: flex;
+  gap: 15px;
+  margin-right: 30px;
+  align-items: center;
 }
 
 .nav-buttons button {
@@ -48,7 +112,7 @@ a {
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
     font-weight: bold;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 .nav-buttons button:hover {
@@ -136,7 +200,7 @@ a {
     padding: 20px;
     min-height: 100vh;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    padding-top: 100px; 
+    padding-top: 100px;
 }
 
 .pfp {
@@ -221,13 +285,13 @@ a {
 
 .profile-nav li.active {
     color: #ff9100;
-    border-bottom: 3px solid #ff9100; 
+    border-bottom: 3px solid #ff9100;
 }
 
 .tab-content {
     padding: 20px 0;
     color: #333;
-    min-height: 300px; 
+    min-height: 300px;
 }
 
 .tab-pane {
@@ -249,7 +313,7 @@ a {
 
 .top-icons {
     position: fixed;
-    bottom: 20px; 
+    bottom: 20px;
     right: 15px;
     gap: 10px;
     z-index: 1000;
@@ -321,23 +385,23 @@ a {
 }
 
 #logout-button {
-    position: absolute; 
-    top: 355px; 
-    left: 850px; 
-    
-    width: 100px; 
+    position: absolute;
+    top: 355px;
+    left: 850px;
+
+    width: 100px;
     padding: 10px 20px;
-    background-color: #cc0000 !important; 
+    background-color: #cc0000 !important;
     color: white;
     border: none;
     border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    
-    z-index: 999; 
+
+    z-index: 999;
     transition: all 0.3s ease;
-    display: none; 
+    display: none;
 }
 
 #logout-button:hover {
@@ -369,9 +433,9 @@ footer {
 /* --- СТИЛИ ДЛЯ ВСПЛЫВАЮЩЕГО ОКНА С ЧИСЛОМ (ДОБАВЛЕНО) --- */
 
 .lucky-popup {
-    display: none; 
+    display: none;
     position: fixed;
-    z-index: 3000; 
+    z-index: 3000;
     left: 0;
     top: 0;
     width: 100%;
@@ -433,9 +497,9 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     .search-form {
-        order: 3; 
+        order: 3;
         width: 100%;
         margin-top: 10px;
         justify-content: center;
@@ -444,17 +508,17 @@ footer {
     .search-form input[type="search"] {
         width: 80%;
     }
-    
+
     .nav-buttons {
-        order: 2; 
+        order: 2;
         margin-right: 0;
         gap: 10px;
         justify-content: center;
         flex-wrap: wrap;
     }
-    
+
     #main {
-        padding-top: 150px; 
+        padding-top: 150px;
     }
 
     /* Адаптация вкладок на 800px */
@@ -471,17 +535,17 @@ footer {
     }
 
     .top-bar {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: flex-start;
         padding: 10px 10px;
     }
-    
+
     .search-form {
         order: 2;
         margin: 10px 0;
         width: 100%;
     }
-    
+
     .search-form input[type="search"] {
         width: 100%;
     }
@@ -508,13 +572,13 @@ footer {
         padding-top: 200px;
         padding: 10px;
     }
-    
+
     .profile-nav ul {
         flex-wrap: wrap;
         gap: 10px;
         justify-content: center;
     }
-    
+
     .profile-nav li {
         font-size: 1em;
     }

@@ -14,10 +14,11 @@
 
 <div class="top-bar">
   <span class="site-name"><a href="../Main/index.html">KINOHUB</a></span>
-  <form class="search-form" action="/search" method="get">
-    <input type="search" name="query" placeholder="Search films...">
+  <form class="search-form">
+    <input type="search" name="query" placeholder="Search films..." id="searchInput">
     <button type="submit">&#x1F50D;</button>
   </form>
+  <div id="searchResults" class="search-results"></div>
   <div class="nav-buttons">
     <a href="../favorite/kinohubfav.html"><button>Favorites</button></a>
     <a href="../Main/index.html"><button>Menu</button></a>
@@ -107,62 +108,59 @@
 <div class="top-icons">
   <div class="faq-button" id="faqButton">?</div>
   <div class="contact-button" id="contactButton">&#128712</div>
-</div>
 
-<div class="faq-popup" id="faqPopup">
-  <div class="faq-content">
-    <span class="close-faq" id="closeFaq">&times;</span>
-    <h2>Frequently Asked Questions</h2>
+  <div class="faq-popup" id="faqPopup">
+    <div class="faq-content">
+      <span class="close-faq" id="closeFaq">&times;</span>
+      <h2>Frequently Asked Questions</h2>
 
-    <div class="faq-item">
-      <button class="faq-question">What is KinoHub?</button>
-      <div class="faq-answer">
-        <p>KinoHub is a platform where you can discover new movies, read reviews, and stay updated on the latest releases.</p>
+      <div class="faq-item">
+        <button class="faq-question">What is KinoHub?</button>
+        <div class="faq-answer">
+          <p>KinoHub is a platform where you can discover new movies, read reviews, and stay updated on the latest releases.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="faq-item">
-      <button class="faq-question">Do I need an account to use KinoHub?</button>
-      <div class="faq-answer">
-        <p>No, you can browse content without an account. However, creating one allows you to save favorites and write reviews.</p>
+      <div class="faq-item">
+        <button class="faq-question">Do I need an account to use KinoHub?</button>
+        <div class="faq-answer">
+          <p>No, you can browse content without an account. However, creating one allows you to save favorites and write reviews.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="faq-item">
-      <button class="faq-question">How often are movies updated?</button>
-      <div class="faq-answer">
-        <p>Our database is updated weekly to keep you informed about the latest films and upcoming releases.</p>
+      <div class="faq-item">
+        <button class="faq-question">How often are movies updated?</button>
+        <div class="faq-answer">
+          <p>Our database is updated weekly to keep you informed about the latest films and upcoming releases.</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  <div id="contactPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" id="closeContact">&times;</span>
+      <h2 style="color: #111111">Contact Us</h2>
+      <form id="contactForm">
+        <label for="contactName" style="color: black;">Name:</label>
+        <input type="text" id="contactName" placeholder="Enter your name" required>
 
+        <label for="contactEmail" style="color: black;">Email:</label>
+        <input type="email" id="contactEmail" placeholder="Enter your email" required>
 
-<div id="contactPopup" class="popup">
-  <div class="popup-content">
-    <span class="close" id="closeContact">&times;</span>
-    <h2 style="color: #111111">Contact Us</h2>
-    <form id="contactForm">
-      <label for="contactName" style="color: black;">Name:</label>
-      <input type="text" id="contactName" placeholder="Enter your name" required>
+        <label for="message" style="color: black;">Message:</label>
+        <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
 
-      <label for="contactEmail" style="color: black;">Email:</label>
-      <input type="email" id="contactEmail" placeholder="Enter your email" required>
-
-      <label for="message" style="color: black;">Message:</label>
-      <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
-
-      <button type="submit" class="submit-btn">Send</button>
-    </form>
-    <div id="feedbackMessage"></div>
+        <button type="submit" class="submit-btn">Send</button>
+      </form>
+      <div id="feedbackMessage"></div>
+    </div>
   </div>
 </div>
+<div id="toast" class="toast">Form submitted successfully!</div>
 
 <script src="../JavaScript/FAQ.js"></script>
 <script src="../JavaScript/contact.js"></script>
 <script src="../JavaScript/partOfAsik6.js"></script>
-<script src="../JavaScript/script.js"></script>
-
-
+<script src="../JavaScript/search.js"></script>
 </body>
 </html>

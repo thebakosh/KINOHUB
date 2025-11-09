@@ -14,10 +14,11 @@
 
 <div class="top-bar">
   <span class="site-name"><a href="../Main/index.html">KINOHUB</a></span>
-  <form class="search-form" action="/search" method="get">
-    <input type="search" name="query" placeholder="Search films...">
+  <form class="search-form">
+    <input type="search" name="query" placeholder="Search films..." id="searchInput">
     <button type="submit">&#x1F50D;</button>
   </form>
+  <div id="searchResults" class="search-results"></div>
   <div class="nav-buttons">
     <a href="../favorite/kinohubfav.html"><button>Favorites</button></a>
     <a href="../Main/index.html"><button>Menu</button></a>
@@ -134,11 +135,13 @@ Instagram
     <div id="feedbackMessage"></div>
   </div>
 </div>
+</div>
+<div id="toast" class="toast">Form submitted successfully!</div>
 
 <script src="../JavaScript/FAQ.js"></script>
 <script src="../JavaScript/contact.js"></script>
 <script src="../JavaScript/partOfAsik6.js"></script>
-<script src="../JavaScript/script.js"></script>
+<script src="../JavaScript/search.js"></script>
 
 </body>
 </html>

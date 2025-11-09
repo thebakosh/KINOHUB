@@ -13,7 +13,7 @@
 <div id="progressBar"></div>
 <div class="top-bar">
     <span class="site-name"><a href="index.html">KINOHUB</a></span>
-    <form class="search-form" action="/search" method="get">
+    <form class="search-form">
         <input type="search" name="query" placeholder="Search films..." id="searchInput">
         <button type="submit">&#x1F50D;</button>
     </form>
@@ -27,12 +27,12 @@
         <button id="showTimeBtn" tabindex="0">Show Time</button>
         <button id="showSignUpBtn">Sign up</button>
         <button id="showLoginBtn">Log in</button>
-        <button id="logOutBtn" class="hidden-auth-form">Log Out</button> 
+        <button id="logOutBtn" class="hidden-auth-form">Log Out</button>
     </div>
     <div id="currentTimeDisplay"></div>
 </div>
 <div class="content container mt-5">
-    <div id="greeting">Welcome to KINOHUB!</div> 
+    <div id="greeting">Welcome to KINOHUB!</div>
     <h1>Welcome to KINOHUB</h1>
     <p>Your ultimate destination for movie enthusiasts! Explore our vast collection of films, read reviews, and stay updated with the latest releases.</p>
     <img src="main1.jpg" alt="Movie Reel" class="img-fluid">
@@ -44,31 +44,6 @@
             <a href="../SuperErma/superErma.html"><img data-src="poster1.jpg" alt="Movie 1" class="lazy-image img-fluid"></a>
             <p class="title">SuperErma</p>
             <p class="date">Sep 23</p>
-        </div>
-        <div class="movie-card col-12 col-sm-6 col-md-4 col-lg-3">
-            <img data-src="poster2.jpeg" alt="Movie 2" class="lazy-image img-fluid">
-            <p class="title">Yes Man</p>
-            <p class="date">Sep 24</p>
-        </div>
-        <div class="movie-card col-12 col-sm-6 col-md-4 col-lg-3">
-            <img data-src="poster3.jpg" alt="Movie 3" class="lazy-image img-fluid">
-            <p class="title">Mask</p>
-            <p class="date">Sep 25</p>
-        </div>
-        <div class="movie-card col-12 col-sm-6 col-md-4 col-lg-3">
-            <img data-src="poster4.jpg" alt="Movie 4" class="lazy-image img-fluid">
-            <p class="title">You</p>
-            <p class="date">Sep 28</p>
-        </div>
-        <div class="movie-card col-12 col-sm-6 col-md-4 col-lg-3">
-            <img data-src="poster5.jpg" alt="Movie 5" class="lazy-image img-fluid">
-            <p class="title">The Sopranos</p>
-            <p class="date">Sep 28</p>
-        </div>
-        <div class="movie-card col-12 col-sm-6 col-md-4 col-lg-3">
-            <img data-src="poster6.jpg" alt="Movie 6" class="lazy-image img-fluid">
-            <p class="title">Jumanji</p>
-            <p class="date">Sep 29</p>
         </div>
     </div>
 </section>
@@ -167,7 +142,9 @@
     </div>
 </div>
 
-<script src="../JavaScript/script.js"></script>
+
+<script src="../JavaScript/API.js"></script>
+<script src="../JavaScript/search.js"></script>
 <script src="../JavaScript/FAQ.js"></script>
 <script src="../JavaScript/contact.js"></script>
 <script src="../JavaScript/partOfAsik6.js"></script>

@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>kinohub</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-<div class="top-bar">
-    <span class="site-name"><a href="../Main/index.html">KINOHUB</a></span>
-    <form class="search-form" action="/search" method="get">
-        <input type="search" name="query" placeholder="Search films...">
-        <button type="submit">&#x1F50D;</button>
-    </form>
-    <div class="nav-buttons">
-        <a href="../favorite/kinohubfav.html"><button>Favorites</button></a>
-        <a href="../Main/index.html"><button>Menu</button></a>
-        <a href="../Settings/a4p1t1.html"><button>Settings</button></a>
-        <a href="../Profile/moviehub.html"><button>Profile</button></a>
-        <button id="changeColorBtn">Change Theme</button>
-        <button id="showTimeBtn" tabindex="0">Show Time</button>
-    </div>
-    <div id="currentTimeDisplay"></div>
-</div>
 
+<div class="top-bar">
+  <span class="site-name"><a href="../Main/index.html">KINOHUB</a></span>
+  <form class="search-form">
+    <input type="search" name="query" placeholder="Search films..." id="searchInput">
+    <button type="submit">&#x1F50D;</button>
+  </form>
+  <div id="searchResults" class="search-results"></div>
+  <div class="nav-buttons">
+    <a href="../favorite/kinohubfav.html"><button>Favorites</button></a>
+    <a href="../Main/index.html"><button>Menu</button></a>
+    <a href="../Settings/a4p1t1.html"><button>Settings</button></a>
+    <a href="../Profile/moviehub.html"><button>Profile</button></a>
+    <button id="changeColorBtn">Change Theme</button>
+    <button id="showTimeBtn" tabindex="0">Show Time</button>
+  </div>
+  <div id="currentTimeDisplay"></div>
+</div>
 <div id="main">
     <div class="pfp">
-        <img src="pfp.png" alt="Profile Picture" width="160" height="160"> 
+        <img src="pfp.png" alt="Profile Picture" width="160" height="160">
     </div>
 
     <div class="username">
@@ -44,7 +45,7 @@
             <li data-tab="stats-tab">Statistics</li>
         </ul>
     </nav>
-    
+
     <div class="tab-content">
         <div id="watched-tab" class="tab-pane active">
             <p>No elements</p>
@@ -72,9 +73,9 @@
             <div class="form-group-center">
                 <img id="currentPfp" src="pfp.png" alt="Current Profile Picture" width="100" height="100" style="border-radius: 50%; margin-bottom: 15px; border: 2px solid #ff8800;">
             </div>
-            
+
             <label for="newPfpFile" style="color: black;">Change Avatar:</label>
-            <input type="file" id="newPfpFile" accept="image/*" style="padding: 5px;"> 
+            <input type="file" id="newPfpFile" accept="image/*" style="padding: 5px;">
 
             <label for="newDisplayName" style="color: black;">Display Name:</label>
             <input type="text" id="newDisplayName" required>
@@ -99,9 +100,9 @@
 
 <script src="../JavaScript/FAQ.js"></script>
 <script src="../JavaScript/contact.js"></script>
-<script src="../JavaScript/profileUpdate.js"></script> 
+<script src="../JavaScript/profileUpdate.js"></script>
 <script src="../JavaScript/partOfAsik6.js"></script>
-<script src="../JavaScript/script.js"></script>
+<script src="../JavaScript/search.js"></script>
 <script src="../JavaScript/auth.js"></script>
 <script src="../JavaScript/profilepoints.js"></script>
 <script src="../JavaScript/lucky.js"></script>
@@ -113,4 +114,5 @@
     <button id="luckyBtn">do you wanna know your lucky number?</button></center>
     <script src="../JavaScript/lucky.js"></script>
 </footer>
+
 </html>
