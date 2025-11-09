@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kinohub</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+<div class="top-bar">
+    <span class="site-name"><a href="../Main/index.html">KINOHUB</a></span>
+    <form class="search-form" action="/search" method="get">
+        <input type="search" name="query" placeholder="Search films...">
+        <button type="submit">&#x1F50D;</button>
+    </form>
+    <div class="nav-buttons">
+        <a href="../favorite/kinohubfav.html"><button>Favorites</button></a>
+        <a href="../Main/index.html"><button>Menu</button></a>
+        <a href="../Settings/a4p1t1.html"><button>Settings</button></a>
+        <a href="../Profile/moviehub.html"><button>Profile</button></a>
+        <button id="changeColorBtn">Change Theme</button>
+        <button id="showTimeBtn" tabindex="0">Show Time</button>
+    </div>
+    <div id="currentTimeDisplay"></div>
+</div>
+
+<div id="main">
+    <div class="pfp">
+        <img src="pfp.png" alt="Profile Picture" width="160" height="160"> 
+    </div>
+
+    <div class="username">
+        <h3 id="displayName">username</h3>
+        <p id="bioText">your bio</p>
+        <button id="updateProfile">Update Profile</button>
+    </div>
+
+    <nav class="profile-nav">
+        <ul>
+            <li class="active" data-tab="watched-tab">Watched</li>
+            <li data-tab="reviews-tab">Recommendations</li>
+            <li data-tab="lists-tab">My lists</li>
+            <li data-tab="comments-tab">Comments</li>
+            <li data-tab="stats-tab">Statistics</li>
+        </ul>
+    </nav>
+    
+    <div class="tab-content">
+        <div id="watched-tab" class="tab-pane active">
+            <p>No elements</p>
+        </div>
+        <div id="reviews-tab" class="tab-pane">
+            <p>No elements</p>
+        </div>
+        <div id="lists-tab" class="tab-pane">
+            <p>No elements</p>
+        </div>
+        <div id="comments-tab" class="tab-pane">
+            <p>No elements</p>
+        </div>
+        <div id="stats-tab" class="tab-pane">
+            <p>Statistics will be there</p>
+        </div>
+    </div>
+</div>
+
+<div id="editProfileModal" class="popup">
+    <div class="popup-content">
+        <span class="close-modal-profile" id="closeProfileModal">&times;</span>
+        <h2 style="color: #111111">Edit Profile</h2>
+        <form id="editProfileForm">
+            <div class="form-group-center">
+                <img id="currentPfp" src="pfp.png" alt="Current Profile Picture" width="100" height="100" style="border-radius: 50%; margin-bottom: 15px; border: 2px solid #ff8800;">
+            </div>
+            
+            <label for="newPfpFile" style="color: black;">Change Avatar:</label>
+            <input type="file" id="newPfpFile" accept="image/*" style="padding: 5px;"> 
+
+            <label for="newDisplayName" style="color: black;">Display Name:</label>
+            <input type="text" id="newDisplayName" required>
+
+            <label for="newBioText" style="color: black;">Bio:</label>
+            <textarea id="newBioText" rows="3"></textarea>
+
+            <button type="submit" class="submit-btn" id="saveProfileBtn">Save Changes</button>
+            <div id="profileUpdateFeedback" style="margin-top: 10px; font-weight: bold;"></div>
+        </form>
+    </div>
+</div>
+
+<div id="luckyPopup" class="lucky-popup">
+    <div class="lucky-popup-content">
+        <span class="close-lucky">&times;</span>
+        <h3>Your lucky number today:</h3>
+        <div id="luckyNumberDisplay" class="lucky-number-display">--</div>
+        <p>Happy watching!</p>
+    </div>
+</div>
+
+<script src="../JavaScript/FAQ.js"></script>
+<script src="../JavaScript/contact.js"></script>
+<script src="../JavaScript/profileUpdate.js"></script> 
+<script src="../JavaScript/partOfAsik6.js"></script>
+<script src="../JavaScript/script.js"></script>
+<script src="../JavaScript/auth.js"></script>
+<script src="../JavaScript/profilepoints.js"></script>
+<script src="../JavaScript/lucky.js"></script>
+
+</body>
+<hr>
+<footer>
+    <center><font size="3" style="color: white">2025 Baktiyar, Yermakhan, Yerassyl. All rights reserved.</font>
+    <button id="luckyBtn">do you wanna know your lucky number?</button></center>
+    <script src="../JavaScript/lucky.js"></script>
+</footer>
+</html>

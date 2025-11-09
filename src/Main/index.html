@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="styleOfMainPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJv1+Vj2R+XYFLbF7AlMk0V5+mqGF1k8F4dGrkZZ7y9hPzOydQb2iI1VmzFY" crossorigin="anonymous">
+</head>
+<body>
+<div id="progressBar"></div>
+<div class="top-bar">
+    <span class="site-name"><a href="index.html">KINOHUB</a></span>
+    <form class="search-form" action="/search" method="get">
+        <input type="search" name="query" placeholder="Search films..." id="searchInput">
+        <button type="submit">&#x1F50D;</button>
+    </form>
+    <div id="searchResults" class="search-results"></div>
+    <div class="nav-buttons">
+        <a href="../favorite/kinohubfav.html"><button>Favorites</button></a>
+        <a href="index.html"><button>Menu</button></a>
+        <a href="../Settings/a4p1t1.html"><button>Settings</button></a>
+        <a href="../Profile/moviehub.html"><button>Profile</button></a>
+        <button id="changeColorBtn">Change Theme</button>
+        <button id="showTimeBtn" tabindex="0">Show Time</button>
+        <button id="showSignUpBtn">Sign up</button>
+        <button id="showLoginBtn">Log in</button>
+        <button id="logOutBtn" class="hidden-auth-form">Log Out</button> 
+    </div>
+    <div id="currentTimeDisplay"></div>
+</div>
+<div class="content container mt-5">
+    <div id="greeting">Welcome to KINOHUB!</div> 
+    <h1>Welcome to KINOHUB</h1>
+    <p>Your ultimate destination for movie enthusiasts! Explore our vast collection of films, read reviews, and stay updated with the latest releases.</p>
+    <img src="main1.jpg" alt="Movie Reel" class="img-fluid">
+</div>
+<section class="movie-section">
+    <h2 class="section-title">New on KinoHub</h2>
+    <div class="movie-list row">
+        <div class="movie-card col-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="../SuperErma/superErma.html"><img data-src="poster1.jpg" alt="Movie 1" class="lazy-image img-fluid"></a>
+            <p class="title">SuperErma</p>
+            <p class="date">Sep 23</p>
+        </div>
+        <div class="movie-card col-12 col-sm-6 col-md-4 col-lg-3">
+            <img data-src="poster2.jpeg" alt="Movie 2" class="lazy-image img-fluid">
+            <p class="title">Yes Man</p>
+            <p class="date">Sep 24</p>
+        </div>
+        <div class="movie-card col-12 col-sm-6 col-md-4 col-lg-3">
+            <img data-src="poster3.jpg" alt="Movie 3" class="lazy-image img-fluid">
+            <p class="title">Mask</p>
+            <p class="date">Sep 25</p>
+        </div>
+        <div class="movie-card col-12 col-sm-6 col-md-4 col-lg-3">
+            <img data-src="poster4.jpg" alt="Movie 4" class="lazy-image img-fluid">
+            <p class="title">You</p>
+            <p class="date">Sep 28</p>
+        </div>
+        <div class="movie-card col-12 col-sm-6 col-md-4 col-lg-3">
+            <img data-src="poster5.jpg" alt="Movie 5" class="lazy-image img-fluid">
+            <p class="title">The Sopranos</p>
+            <p class="date">Sep 28</p>
+        </div>
+        <div class="movie-card col-12 col-sm-6 col-md-4 col-lg-3">
+            <img data-src="poster6.jpg" alt="Movie 6" class="lazy-image img-fluid">
+            <p class="title">Jumanji</p>
+            <p class="date">Sep 29</p>
+        </div>
+    </div>
+</section>
+<h2 class="section-title">NEWS OF THE DAY</h2>
+
+<div class="news-card row">
+    <a href="../SuperErma/superErma.html" class="col-12 col-md-4"><img src="news.jpg" alt="News of the Day" class="img-fluid"></a>
+    <div class="news-content col-12 col-md-8">
+        <h3>One of the famous producers <a href="../Producer/producer.html" class="site-name">Gaziz Yerasyl</a> and <a href="../Bakosh/bakosh.html" class="site-name">Kuanysh Baktiyar</a> announced "SuperErma"</h3>
+        <p>The upcoming SuperErma movie has been officially confirmed. Fans can expect epic battles, new heroes, and surprises in the storyline!</p>
+        <span class="date">Sep 23, 2025</span>
+    </div>
+</div>
+
+<hr>
+<footer>
+    <center><font size="3">2025 Baktiyar, Yermakhan, Yerassyl. All rights reserved.</font></center>
+</footer>
+
+<div class="top-icons">
+    <div class="faq-button" id="faqButton">?</div>
+    <div class="contact-button" id="contactButton">&#128712</div>
+
+    <div class="faq-popup" id="faqPopup">
+        <div class="faq-content">
+            <span class="close-faq" id="closeFaq">&times;</span>
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <button class="faq-question">What is KinoHub?</button>
+                <div class="faq-answer">
+                    <p>KinoHub is a platform where you can discover new movies, read reviews, and stay updated on the latest releases.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Do I need an account to use KinoHub?</button>
+                <div class="faq-answer">
+                    <p>No, you can browse content without an account. However, creating one allows you to save favorites and write reviews.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">How often are movies updated?</button>
+                <div class="faq-answer">
+                    <p>Our database is updated weekly to keep you informed about the latest films and upcoming releases.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contactPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="closeContact">&times;</span>
+            <h2 style="color: #111111">Contact Us</h2>
+            <form id="contactForm">
+                <label for="contactName" style="color: black;">Name:</label>
+                <input type="text" id="contactName" placeholder="Enter your name" required>
+
+                <label for="contactEmail" style="color: black;">Email:</label>
+                <input type="email" id="contactEmail" placeholder="Enter your email" required>
+
+                <label for="message" style="color: black;">Message:</label>
+                <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+
+                <button type="submit" class="submit-btn">Send</button>
+            </form>
+            <div id="feedbackMessage"></div>
+        </div>
+    </div>
+</div>
+<div id="toast" class="toast">Form submitted successfully!</div>
+
+<div id="authModal" class="auth-modal">
+    <div class="auth-modal-content">
+        <span class="auth-close-btn">&times;</span>
+
+        <div id="signUpFormContainer" class="auth-form-container">
+            <h2>Sign up</h2>
+            <input type="text" id="signup-name" placeholder="Name" required>
+            <input type="text" id="signup-surname" placeholder="Surname" required>
+            <input type="email" id="signup-email" placeholder="Email" required>
+            <input type="password" id="signup-password" placeholder="Password" required>
+            <input type="tel" id="signup-phone" placeholder="Phone Number" required>
+            <button id="signUpSubmitBtn" class="auth-submit-btn">Register</button>
+            <p id="signup-message" class="auth-message"></p>
+            <p>Already have an account? <a href="#" id="switchToLogin">Log in</a></p>
+        </div>
+
+        <div id="loginFormContainer" class="auth-form-container hidden-auth-form">
+            <h2>Log in</h2>
+            <input type="email" id="login-email" placeholder="Email" required> <input type="password" id="login-password" placeholder="Password" required>
+            <button id="logInSubmitBtn" class="auth-submit-btn">Log in</button>
+            <p id="login-message" class="auth-message"></p>
+            <p>Don't have an account? <a href="#" id="switchToSignUp">Sign up</a></p>
+        </div>
+    </div>
+</div>
+
+<script src="../JavaScript/script.js"></script>
+<script src="../JavaScript/FAQ.js"></script>
+<script src="../JavaScript/contact.js"></script>
+<script src="../JavaScript/partOfAsik6.js"></script>
+<script src="../JavaScript/scroll.js"></script>
+<script src="../JavaScript/lazyload.js"></script>
+<script src="../JavaScript/auth.js"></script>
+</body>
+</html>

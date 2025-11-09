@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kinohub - about actor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="top-bar">
+  <span class="site-name"><a href="../Main/index.html">KINOHUB</a></span>
+  <form class="search-form" action="/search" method="get">
+    <input type="search" name="query" placeholder="Search films...">
+    <button type="submit">&#x1F50D;</button>
+  </form>
+  <div class="nav-buttons">
+    <a href="../favorite/kinohubfav.html"><button>Favorites</button></a>
+    <a href="../Main/index.html"><button>Menu</button></a>
+    <a href="../Settings/a4p1t1.html"><button>Settings</button></a>
+    <a href="../Profile/moviehub.html"><button>Profile</button></a>
+    <button id="changeColorBtn">Change Theme</button>
+    <button id="showTimeBtn" tabindex="0">Show Time</button>
+  </div>
+  <div id="currentTimeDisplay"></div>
+</div>
+
+<div class="content">
+  <div class="container">
+    <img src="Producer.jpg" width="300px" height="400px">
+    <div class="text">
+      <h1>Yerassyl Gaziz</h1>
+      <p>
+        Career: Producer, Screenwriter, Director, Cinematographer, Actor, Composer<br>
+        Birthday: 22 May 2007<br>
+        Born place: Aktobe, Kazakhstan<br>
+        Height: 1.88 m<br>
+        Wife: Aya Shalkar
+      </p>
+      <hr>
+    </div>
+  </div>
+  <p>
+    Yerassyl Gaziz was born on May 22, 2007, in Aktobe, Kazakhstan. From a young age, Yerassyl showed an exceptional interest in the world of cinema. His passion for film making led him to pursue a multifaceted career in the entertainment industry, excelling as a producer, screenwriter, director, and actor.
+  </p>
+  <p>
+    His breakout project, a film he produced, quickly garnered attention for its creative vision and storytelling. Yerassyl’s ability to juggle multiple roles within the film industry has made him a highly regarded name in Kazakhstan’s film industry.
+  </p>
+  <p>
+    Today, Yerassyl Gaziz continues to influence the entertainment world, always on the lookout for new opportunities to create and expand his portfolio.
+  </p>
+
+  <h3>Movies with this producer:</h3>
+  <div class="films">
+    <img src="poster1.jpg">
+    <img src="poster2.jpeg">
+    <img src="poster3.jpg">
+    <img src="poster4.jpg">
+    <img src="poster5.jpg">
+    <img src="poster6.jpg">
+  </div>
+
+  <h3>Social Networks of Producer:</h3>
+  <a href="https://www.instagram.com/" target="_blank" style="color:rgb(255, 119, 0)">
+    Instagram
+  </a>
+</div>
+
+<hr>
+<footer>
+  <center><font size="3">2025 Baktiyar, Yermakhan, Yerassyl. All rights reserved.</font></center>
+</footer>
+
+<div class="top-icons">
+  <div class="faq-button" id="faqButton">?</div>
+  <div class="contact-button" id="contactButton">&#128712</div>
+</div>
+
+<div class="faq-popup" id="faqPopup">
+  <div class="faq-content">
+    <span class="close-faq" id="closeFaq">&times;</span>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">What is KinoHub?</button>
+      <div class="faq-answer">
+        <p>KinoHub is a platform where you can discover new movies, read reviews, and stay updated on the latest releases.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do I need an account to use KinoHub?</button>
+      <div class="faq-answer">
+        <p>No, you can browse content without an account. However, creating one allows you to save favorites and write reviews.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How often are movies updated?</button>
+      <div class="faq-answer">
+        <p>Our database is updated weekly to keep you informed about the latest films and upcoming releases.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contactPopup" class="popup">
+  <div class="popup-content">
+    <span class="close" id="closeContact">&times;</span>
+    <h2 style="color: #111111">Contact Us</h2>
+    <form id="contactForm">
+      <label for="contactName" style="color: black;">Name:</label>
+      <input type="text" id="contactName" placeholder="Enter your name" required>
+
+      <label for="contactEmail" style="color: black;">Email:</label>
+      <input type="email" id="contactEmail" placeholder="Enter your email" required>
+
+      <label for="message" style="color: black;">Message:</label>
+      <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+
+      <button type="submit" class="submit-btn">Send</button>
+    </form>
+    <div id="feedbackMessage"></div>
+  </div>
+</div>
+
+<script src="../JavaScript/FAQ.js"></script>
+<script src="../JavaScript/contact.js"></script>
+<script src="../JavaScript/partOfAsik6.js"></script>
+<script src="../JavaScript/script.js"></script>
+
+</body>
+</html>
