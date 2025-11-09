@@ -3,14 +3,6 @@ html, body {
     margin: 0;
     padding: 0;
 }
-body {
-  font-family: "Colibri", sans-serif;
-  background-color: #ff8800;
-  transition: background-color 0.5s ease;
-  min-height: 100vh;
-  color: #f8f7f7;
-  background-attachment: fixed;
-}
 
 .top-bar {
   display: flex;
@@ -67,15 +59,15 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 10;
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   margin-top: 15px;
   margin-left: 300px;
 }
 
 .search-results .movie-card {
   padding: 5px;
-  border-bottom: 1px solid #eee;
   cursor: pointer;
+  margin: 0;
 }
 
 .search-results .movie-card:hover {
@@ -120,18 +112,6 @@ body {
 
 .button:hover {
   background-color: #45a049;
-}
-
-#changeColorBtn {
-  background-color: #e86500;
-  color: white;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-#changeColorBtn:hover {
-  background-color: #e86500;
 }
 img {
     max-width: 100%;
@@ -178,24 +158,6 @@ a {
     box-shadow: 0 0 15px rgba(255, 119, 0, 0.6);
 }
 
-#changeColorBtn {
-    background-color: #e86500;
-    color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-    border: 1px solid #e86500;
-}
-
-#changeColorBtn:hover {
-    background-color: black;
-    color: #e86500;
-    border-color: #e86500;
-    transform: scale(1.05);
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(232, 101, 0, 0.8);
-}
 
 .nav-buttons button:focus,
 .nav-buttons a:focus {

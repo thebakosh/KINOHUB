@@ -3,16 +3,6 @@ html, body {
     margin: 0;
     padding: 0;
 }
-
-body {
-    font-family: "Colibri", sans-serif;
-    background-color: #ff9100;
-    transition: background-color 0.5s ease;
-    min-height: 100vh;
-    color: #f8f7f7;
-    background-attachment: fixed;
-}
-
 p {
     font-size: 16px;
     font-weight: normal;

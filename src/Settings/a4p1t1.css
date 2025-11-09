@@ -1,11 +1,4 @@
-body {
-  font-family: "Colibri", sans-serif;
-  background-color: #ff8800;
-  transition: background-color 0.5s ease;
-  min-height: 100vh;
-  color: #f8f7f7;
-  background-attachment: fixed;
-}
+
 #dateTimeDisplay {
   font-size: 16px;
   color: #f8f7f7;
@@ -53,18 +46,6 @@ body {
 
 .button:hover {
   background-color: #45a049;
-}
-
-#changeColorBtn {
-  background-color: #e86500;
-  color: white;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-#changeColorBtn:hover {
-  background-color: #e86500;
 }
 
 h1 {

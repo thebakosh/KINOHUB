@@ -4,15 +4,6 @@ html, body {
     padding: 0;
 }
 
-body {
-    font-family: "Colibri", sans-serif;
-    background-color: #ff9100;
-    transition: background-color 0.5s ease;
-    min-height: 100vh;
-    color: #f8f7f7;
-    background-attachment: fixed;
-}
-
 .auth-modal {
     display: none;
     position: fixed;
@@ -200,25 +191,6 @@ body {
     box-shadow: 0 0 15px rgba(255, 119, 0, 0.6);
 }
 
-#changeColorBtn {
-    background-color: #e86500;
-    color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-    border: 1px solid #e86500;
-}
-
-#changeColorBtn:hover {
-    background-color: black;
-    color: #e86500;
-    border-color: #e86500;
-    transform: scale(1.05);
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(232, 101, 0, 0.8);
-}
-
 .nav-buttons button:focus,
 .nav-buttons a:focus {
     outline: 3px solid #ff9100;
@@ -375,7 +347,7 @@ body {
 #greeting {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #ffffff;
     text-align: center;
     margin-top: 20px;
 }

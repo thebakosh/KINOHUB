@@ -1,13 +1,3 @@
-body {
-    font-family: "Colibri", sans-serif;
-    background-color: #ff8800;
-    transition: background-color 0.5s ease;
-    min-height: 100vh;
-    color: #f8f7f7;
-    background-attachment: fixed;
-}
-
-
 
 a {
     text-decoration: none;

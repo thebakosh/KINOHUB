@@ -2,7 +2,7 @@ $(document).ready(function () {
   console.log("Document is ready!");
   console.log("jQuery version: " + $.fn.jquery);
 
-  const apiKey = 'e0f8a9ad'; // Ваш API-ключ OMDb
+  const apiKey = 'e0f8a9ad';
   const apiUrl = 'http://www.omdbapi.com/?apikey=' + apiKey;
 
   $('#searchInput').on('keyup', function () {
@@ -23,7 +23,6 @@ $(document).ready(function () {
       .then(response => response.json())
       .then(data => {
         if (data.Response === "True") {
-          // Перебираем результаты поиска
           data.Search.forEach(movie => {
             var titleText = movie.Title.toLowerCase();
             var linkUrl = `https://www.imdb.com/title/${movie.imdbID}`;
