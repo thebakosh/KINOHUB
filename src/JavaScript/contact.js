@@ -55,8 +55,8 @@ function handleFormSubmissionResponse(success, data) {
   if (success) {
     feedbackMessage.textContent = "Your message has been sent successfully!";
     feedbackMessage.style.color = 'green';
-    contactForm.reset();  // Сбрасываем форму
-    contactPopup.style.display = 'none'; // Закрываем попап
+    contactForm.reset();
+    contactPopup.style.display = 'none';
     showToastMessage();
   } else {
     feedbackMessage.textContent = "There was an error sending your message. Please try again.";
@@ -79,7 +79,6 @@ document.addEventListener("DOMContentLoaded", function() {
     form.addEventListener("submit", function(e) {
       e.preventDefault();
 
-      // Показать успешное сообщение
       toast.textContent = "Form submitted successfully!";
       toast.classList.add('show');
       setTimeout(() => {

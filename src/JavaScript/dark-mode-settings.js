@@ -15,7 +15,6 @@ $(document).ready(function() {
     localStorage.setItem(storageKey, theme);
   }
 
-  // Загружаем сохранённую тему
   const savedTheme = localStorage.getItem(storageKey);
   if (savedTheme) {
     setTheme(savedTheme);
@@ -23,12 +22,10 @@ $(document).ready(function() {
     setTheme('light');
   }
 
-  // Свитчер (например checkbox)
   $darkModeToggle.on('change', function() {
     setTheme(this.checked ? 'dark' : 'light');
   });
 
-  // Кнопка "Change Theme"
   $changeThemeButton.on('click', function() {
     const isDark = $body.hasClass('dark-mode');
     setTheme(isDark ? 'light' : 'dark');
