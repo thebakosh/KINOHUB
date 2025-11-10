@@ -257,7 +257,7 @@ hr {
   border-radius: 5px;
   padding: 5px;
   margin-top: 15px;
-  margin-left: 300px;
+  margin-left: 380px;
 }
 
 .search-results .movie-card {
@@ -409,7 +409,7 @@ footer {
 .achievements {
   padding: 20px;
   max-width: 900px;
-  margin: 40px auto; /* Центрируем блок на странице */
+  margin: 40px auto;
 }
 
 h3 {
